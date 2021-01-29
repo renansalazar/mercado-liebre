@@ -4,7 +4,7 @@ const app = express()
 const path = require("path")
 
 //const publicPath = path.resolve(__dirname, "./public")
-const puerto = 3001
+const puerto = process.env.PORT || 3000
 app.listen(puerto, ()=>{
     console.log("servidor corriendo en "+puerto)
 })
